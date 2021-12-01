@@ -26,6 +26,10 @@ namespace AdventOfCode
                     }
                 }
             }
+            else
+            {
+                Console.WriteLine($"Error - File does not exists at {path}");
+            }
             return contence;
         }
 
@@ -44,6 +48,10 @@ namespace AdventOfCode
                     }
                 }
             }
+            else
+            {
+                Console.WriteLine($"Error - File does not exists at {path}");
+            }
             return contence;
         }
 
@@ -59,6 +67,10 @@ namespace AdventOfCode
                         contence.Add(sr.ReadLine());
                     }
                 }
+            }
+            else
+            {
+                Console.WriteLine($"Error - File does not exists at {path}");
             }
             return contence;
         }
