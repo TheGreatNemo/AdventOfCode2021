@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace AdventOfCodeTest
 {
-    public class Tests
+    public class TestsDayOne
     {
         [Test]
         public void Test1()
