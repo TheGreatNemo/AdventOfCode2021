@@ -13,6 +13,7 @@ namespace AdventOfCode
             ExecuteDayOne(fileReader, 1);
             ExecuteDayTwo(fileReader, 2);
             ExecuteDayThree(fileReader, 3);
+            ExecuteDayFour(fileReader, 4);
         }
 
         private static void ExecuteDayOne(FileReader fileReader, int day)
@@ -37,6 +38,14 @@ namespace AdventOfCode
             DayThree puzzle = new DayThree();
             ResultWriter.Write(puzzle.GetPowerConsumption(input).ToString(), day, 1);
             ResultWriter.Write(puzzle.GetLifeSupportRating(input).ToString(), day, 2);
+        }
+
+        private static void ExecuteDayFour(FileReader fileReader, int day)
+        {
+            List<string> input = fileReader.ReadLinesFromFile($"Inputs/Day{day}.txt");
+            DayFour puzzle = new DayFour();
+            ResultWriter.Write(puzzle.GetWinningBoardValue(input).ToString(), day, 1);
+            ResultWriter.Write(puzzle.GetLoosingBardValue(input).ToString(), day, 2);
         }
     }
 }
